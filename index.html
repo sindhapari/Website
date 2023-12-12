@@ -1,4 +1,26 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS via WhatsApp</title>
+</head>
+<body>
+    <h1>Send SMS via WhatsApp</h1>
+    
+    <!-- Replace '1234567890' with the recipient's phone number -->
+    <a href="https://wa.me/1234567890?text=Hello%20from%20your%20website" target="_blank">
+        <button>Send WhatsApp Message</button>
+    </a>
+    
+    <script>
+        // You can also dynamically set the message using JavaScript
+        var phoneNumber = '+917871548004';
+        var message = 'Hello from your website';
+        var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
 
-<BODY><H1>*MBU !</H1></BODY>
-</HTML>
+        // Update the link with the dynamic values
+        document.querySelector('a').href = whatsappLink;
+    </script>
+</body>
+</html>
